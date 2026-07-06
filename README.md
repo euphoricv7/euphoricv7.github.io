@@ -1,52 +1,31 @@
-# Hogwarts School of Witchcraft & Wizardry — Responsive Page
+# Task 5: Deploy a Static Website Using GitHub Pages
 
-Task 4 submission for the Web Development Internship: a desktop-only Hogwarts-themed page converted to a fully mobile-friendly layout using CSS media queries.
+This folder contains the deliverables for **Task 5** of the Elevate Labs Web Development Internship. It consists of a clean, responsive developer portfolio page hosted on GitHub Pages.
 
-This is a fan-made, **non-commercial** practice project themed to match the Platform 9¾ and Marauder's List projects from Tasks 1 and 2. All copy is original; no text is copied from any book or film.
+---
 
-## What the page includes
+##  Project Overview
 
-- **Nav** — fixed header with horizontal links on desktop, collapsing into an animated hamburger menu on mobile
-- **Hero** — full-screen opening section with school name, tagline, and two CTA buttons
-- **Houses** — four-column grid of house cards with icons and house color swatches
-- **Courses** — three-column grid of subject cards (Divination, Potions, Herbology, DADA, Charms, Astronomy)
-- **Quote** — Dumbledore quote section
-- **Stats** — four-column grid of castle facts
-- **Footer** — school info and nav links
+A clean, responsive, and basic dark-theme developer portfolio built to display all internship deliverable links. It features:
+- **Dark Theme Style**: Standard slate dark theme layout.
+- **Responsive Layout**: Adapts automatically to tablets and mobile screen sizes using CSS Media Queries.
+- **Standard Menu Control**: Toggle button for mobile nav navigation.
+- **Simple Form Submission**: Mock script showing a thank-you success block upon sending messages.
 
-## How responsiveness was handled
+---
 
-All mobile overrides are inside two media query blocks — nothing in the desktop base was deleted, the queries simply layer on top.
+## 📂 Folder Structure
 
-- `@media (max-width: 768px)` — main mobile breakpoint:
-  - Horizontal nav hidden, hamburger button revealed (JS toggles `.open` class)
-  - Houses grid: 4 columns → 2 columns
-  - Courses grid: 3 columns → 1 column
-  - Stats grid: 4 columns → 2×2 grid
-  - Hero buttons stack vertically and go full width
-  - Section padding reduced
-  - `overflow-x: hidden` prevents any scrollbar from fixed-width children
+```text
+Task-5/
+├── index.html     # Semantic HTML5 layout structure
+├── style.css      # Standard CSS design layout rules
+├── script.js     # Basic menu toggle and contact form handler script
+└── README.md      # Project summary (this file)
+```
 
-- `@media (max-width: 420px)` — extra small phones:
-  - Houses grid: 2 columns → 1 column
+---
 
-Headings use `clamp()` for fluid type sizing so font sizes scale automatically between breakpoints without needing extra overrides.
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Page structure and content |
-| `style.css` | Desktop base styles + mobile media queries |
-| `script.js` | Hamburger menu toggle (open/close on click and link tap) |
-
-## Running it locally
-
-1. Open the folder in VS Code.
-2. Install the **Live Server** extension if needed.
-3. Right-click `index.html` → **Open with Live Server**.
-4. Open Chrome DevTools → toggle device toolbar (Cmd+Shift+M) to test at 375px and 768px.
-
-## Key concepts demonstrated
-
-CSS media queries, responsive grid layouts, fluid typography with `clamp()`, hamburger nav pattern, viewport meta tag, and `overflow-x` management.
+## 🛠️ How to Run Locally
+1. Open this directory in your code editor (e.g. VS Code).
+2. Right-click `index.html` and select **Open with Live Server** (or open the file directly in any browser).
